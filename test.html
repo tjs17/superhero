@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dosis">
+<style>
+.outerContainer {
+  display: inline-block;
+  width: 50%;
+}
+.innerContainer {
+	display:block;
+	margin:auto;
+	width:95%;
+}
+IMG.singleIMG {
+	display:block;
+	margin:auto !important;
+	vertical-align:top !important;
+	width:50%;
+}
+IMG.doubleIMG {
+	display:inline-block;
+	margin:auto !important;
+	vertical-align:top !important;
+	width:50%;
+}
+p.sansserif {
+	font-family: Dosis, sans-serif;
+}
+
+p {
+	font-size: 50px;
+	margin:auto;
+}
+#linetopleft {
+	border-bottom: 2px #fff solid;
+    overflow:visible;       
+    margin: 0 0 15px 0;
+}
+#linetopright {
+	border-bottom: 2px #0078f0 solid;
+    overflow:visible;
+    margin: 0 0 15px 0;
+}
+#linebottomleft {
+	border-top: 2px #fff solid;
+    overflow:visible;      
+    margin: 15px 0 15px 0;
+}
+#linebottomright {
+	border-top: 2px #0078f0 solid;
+    overflow:visible;
+	margin: 15px 0 15px 0;
+}
+</style>
+
+<body>
+
+<div style="display:flex">
+	<!-- MARVEL -->
+	<div class="outerContainer" style="background-color:rgb(172,16,3)">
+		<header style="text-align: center"><img src='marvel_logo.JPG' width="50%"/></header>
+		<div>
+			<p class="sansserif" style="margin-left:2.5%; color:rgb(255,255,255)">2017</p>
+		</div>
+		<div id="linetopleft"></div>
+		<div class="innerContainer">
+			<a href="#"><img class="doubleIMG" id="logan" src="logan_logo.JPG"/><!--
+			--><a href="#"><img class="doubleIMG" id="gotg2" src="guardians_of_the_galaxy_2_logo.JPG"/></a><!--
+			--><a href="#"><img class="doubleIMG" id="spmh" src="spider-man_homecoming_logo.JPG"/><!--
+			--><a href="#"><img class="doubleIMG" id="thor3" src="thor_ragnarok_logo.JPG"/>
+		</div>
+		<div id="linebottomleft"></div>
+	</div>
+	
+	<!-- DC -->
+	<div class="outerContainer" style="background-color:rgb(0,0,0)">
+		<header style="text-align: center"><img src='dc_logo.JPG' width="50%"/></header>
+		<div>
+			<p class="sansserif" style="margin-left:86.5%; color:rgb(0,120,240)">2017</p>
+		</div>
+		<div id="linetopright"></div>
+		<div class="innerContainer">
+			<a href="#"><img class="doubleIMG" id="legobm" src="lego_batman_logo.JPG"/><!--
+			--><a href="#"><img class="doubleIMG" id="ww" src="wonder_woman_logo.JPG"/></a><!--
+			--><a href="#"><img class="singleIMG" id="jl" src="justice_league_logo.JPG"/>
+		</div>
+		<div id="linebottomright"></div>
+	</div>
+</div>
+
+<script>
+<!-- MARVEL -->
+
+<!--Logan-->
+document.getElementById("logan").onmouseover = function() {change("logan_release.JPG", "logan")};
+document.getElementById("logan").onmouseout = function() {change("logan_logo.JPG", "logan")};
+<!--Guardians of the Galaxy Vol. 2-->
+document.getElementById("gotg2").onmouseover = function() {change("guardians_of_the_galaxy_2_release.JPG", "gotg2")};
+document.getElementById("gotg2").onmouseout = function() {change("guardians_of_the_galaxy_2_logo.JPG", "gotg2")};
+<!--Spider-Man: Homecoming-->
+document.getElementById("spmh").onmouseover = function() {change("spider-man_homecoming_release.JPG", "spmh")};
+document.getElementById("spmh").onmouseout = function() {change("spider-man_homecoming_logo.JPG", "spmh")};
+<!--Thor: Ragnarok-->
+document.getElementById("thor3").onmouseover = function() {change("thor_ragnarok_release.JPG", "thor3")};
+document.getElementById("thor3").onmouseout = function() {change("thor_ragnarok_logo.JPG", "thor3")};
+
+<!-- MARVEL -->
+
+<!-- DC -->
+
+<!--The Lego Batman Movie-->
+document.getElementById("legobm").onmouseover = function() {change("lego_batman_release.JPG", "legobm")};
+document.getElementById("legobm").onmouseout = function() {change("lego_batman_logo.JPG", "legobm")};
+<!--Wonder Woman-->
+document.getElementById("ww").onmouseover = function() {change("wonder_woman_release.JPG", "ww")};
+document.getElementById("ww").onmouseout = function() {change("wonder_woman_logo.JPG", "ww")};
+<!--Justice League-->
+document.getElementById("jl").onmouseover = function() {change("justice_league_release.JPG", "jl")};
+document.getElementById("jl").onmouseout = function() {change("justice_league_logo.JPG", "jl")};
+
+<!-- DC -->
+
+function change(pic, ID) {
+	document.getElementById(ID).src = pic;
+}
+</script>
+
+</body>
+</html>
