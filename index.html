@@ -59,65 +59,80 @@ p {
 <div style="display:flex">
 	<!-- MARVEL -->
 	<div class="outerContainer" style="background-color:rgb(172,16,3)">
-		<header style="text-align: center"><img src='pics/marvel_logo.JPG' width="50%"/></header>
+		<header style="text-align: center"><img src="https://www.dropbox.com/s/2tdrigz35ukhqo1/marvel_logo.jpg?raw=1" width="50%"></header>
 		<div>
 			<p class="sansserif" style="margin-left:2.5%; color:rgb(255,255,255)">2017</p>
 		</div>
 		<div id="linetopleft"></div>
 		<div class="innerContainer">
-			<a href="#"><img class="doubleIMG" id="logan" src="pics/logan_logo.JPG"/><!--
-			--><a href="#"><img class="doubleIMG" id="gotg2" src="pics/guardians_of_the_galaxy_2_logo.JPG"/></a><!--
-			--><a href="#"><img class="doubleIMG" id="spmh" src="pics/spider-man_homecoming_logo.JPG"/><!--
-			--><a href="#"><img class="doubleIMG" id="thor3" src="pics/thor_ragnarok_logo.JPG"/>
+			<a href="#"><img class="doubleIMG" id="logan" src="https://www.dropbox.com/s/j3xg95w15uniqb4/logan_logo.jpg?raw=1"></a><!--
+			--><a href="#"><img class="doubleIMG" id="gotg2" src="https://www.dropbox.com/s/3or5mgn6l1zaqdh/guardians_of_the_galaxy_2_logo.jpg?raw=1"></a><!--
+			--><a href="#"><img class="doubleIMG" id="spmh" src="https://www.dropbox.com/s/bxw743407i5t48u/spider-man_homecoming_logo.jpg?raw=1"></a><!--
+			--><a href="#"><img class="doubleIMG" id="thor3" src="https://www.dropbox.com/s/s6bpx5i62iap70o/thor_ragnarok_logo.jpg?raw=1"></a>
 		</div>
 		<div id="linebottomleft"></div>
 	</div>
 	
 	<!-- DC -->
 	<div class="outerContainer" style="background-color:rgb(0,0,0)">
-		<header style="text-align: center"><img src='pics/dc_logo.JPG' width="50%"/></header>
+		<header style="text-align: center"><img src= "https://www.dropbox.com/s/5nth8bbbp8akuin/dc_logo.jpg?raw=1" width="50%"></header>
 		<div>
 			<p class="sansserif" style="margin-left:86.5%; color:rgb(0,120,240)">2017</p>
 		</div>
 		<div id="linetopright"></div>
 		<div class="innerContainer">
-			<a href="#"><img class="doubleIMG" id="legobm" src="pics/lego_batman_logo.JPG"/><!--
-			--><a href="#"><img class="doubleIMG" id="ww" src="pics/wonder_woman_logo.JPG"/></a><!--
-			--><a href="#"><img class="singleIMG" id="jl" src="pics/justice_league_logo.JPG"/>
+			<a href="#"><img class="doubleIMG" id="legobm" src="https://www.dropbox.com/s/wu345xydp2lt2cy/lego_batman_logo.jpg?raw=1"><!--
+			--><a href="#"><img class="doubleIMG" id="ww" src="https://www.dropbox.com/s/d7htxib0jis31jg/wonder_woman_logo.jpg?raw=1"></a><!--
+			--><a href="#"><img class="singleIMG" id="jl" src="https://www.dropbox.com/s/nw9k9z44covc5lx/justice_league_logo.jpg?raw=1">
 		</div>
 		<div id="linebottomright"></div>
 	</div>
 </div>
 
 <script>
+var preload = ["https://www.dropbox.com/s/2tdrigz35ukhqo1/marvel_logo.jpg?raw=1", "https://www.dropbox.com/s/5nth8bbbp8akuin/dc_logo.jpg?raw=1",
+"https://www.dropbox.com/s/j3xg95w15uniqb4/logan_logo.jpg?raw=1", "https://www.dropbox.com/s/lhhlnwp7xglb664/logan_release.jpg?raw=1",
+"https://www.dropbox.com/s/3or5mgn6l1zaqdh/guardians_of_the_galaxy_2_logo.jpg?raw=1", "https://www.dropbox.com/s/4zj1i9943qzbyxp/guardians_of_the_galaxy_2_release.jpg?raw=1",
+"https://www.dropbox.com/s/bxw743407i5t48u/spider-man_homecoming_logo.jpg?raw=1", "https://www.dropbox.com/s/wklcc7yr2zmv5aq/spider-man_homecoming_release.jpg?raw=1",
+"https://www.dropbox.com/s/s6bpx5i62iap70o/thor_ragnarok_logo.jpg?raw=1", "https://www.dropbox.com/s/cexhouhb4y2oror/thor_ragnarok_release.jpg?raw=1",
+"https://www.dropbox.com/s/wu345xydp2lt2cy/lego_batman_logo.jpg?raw=1", "https://www.dropbox.com/s/73rbhcpff0g49pw/lego_batman_release.jpg?raw=1",
+"https://www.dropbox.com/s/d7htxib0jis31jg/wonder_woman_logo.jpg?raw=1", "https://www.dropbox.com/s/zhrm3oi7duozffs/wonder_woman_release.jpg?raw=1",
+"https://www.dropbox.com/s/nw9k9z44covc5lx/justice_league_logo.jpg?raw=1", "https://www.dropbox.com/s/pqoqy5w6bpte137/justice_league_release.jpg?raw=1"];
+
+var images = [];
+for (i = 0; i < preload.length; i++) {
+    images[i] = new Image();
+    images[i].src = preload[i];
+}
+
 <!-- MARVEL -->
 
 <!--Logan-->
-document.getElementById("logan").onmouseover = function() {change("pics/logan_release.JPG", "logan")};
-document.getElementById("logan").onmouseout = function() {change("pics/logan_logo.JPG", "logan")};
+document.getElementById("logan").onmouseover = function() {change("https://www.dropbox.com/s/lhhlnwp7xglb664/logan_release.jpg?raw=1", "logan")};
+document.getElementById("logan").onmouseout = function() {change("https://www.dropbox.com/s/j3xg95w15uniqb4/logan_logo.jpg?raw=1", "logan")};
 <!--Guardians of the Galaxy Vol. 2-->
-document.getElementById("gotg2").onmouseover = function() {change("pics/guardians_of_the_galaxy_2_release.JPG", "gotg2")};
-document.getElementById("gotg2").onmouseout = function() {change("pics/guardians_of_the_galaxy_2_logo.JPG", "gotg2")};
+document.getElementById("gotg2").onmouseover = function() {change("https://www.dropbox.com/s/4zj1i9943qzbyxp/guardians_of_the_galaxy_2_release.jpg?raw=1", "gotg2")};
+document.getElementById("gotg2").onmouseout = function() {change("https://www.dropbox.com/s/3or5mgn6l1zaqdh/guardians_of_the_galaxy_2_logo.jpg?raw=1", "gotg2")};
 <!--Spider-Man: Homecoming-->
-document.getElementById("spmh").onmouseover = function() {change("pics/spider-man_homecoming_release.JPG", "spmh")};
-document.getElementById("spmh").onmouseout = function() {change("pics/spider-man_homecoming_logo.JPG", "spmh")};
+document.getElementById("spmh").onmouseover = function() {change("https://www.dropbox.com/s/wklcc7yr2zmv5aq/spider-man_homecoming_release.jpg?raw=1", "spmh")};
+document.getElementById("spmh").onmouseout = function() {change("https://www.dropbox.com/s/bxw743407i5t48u/spider-man_homecoming_logo.jpg?raw=1", "spmh")};
 <!--Thor: Ragnarok-->
-document.getElementById("thor3").onmouseover = function() {change("pics/thor_ragnarok_release.JPG", "thor3")};
-document.getElementById("thor3").onmouseout = function() {change("pics/thor_ragnarok_logo.JPG", "thor3")};
+document.getElementById("thor3").onmouseover = function() {change("https://www.dropbox.com/s/cexhouhb4y2oror/thor_ragnarok_release.jpg?raw=1", "thor3")};
+document.getElementById("thor3").onmouseout = function() {change("https://www.dropbox.com/s/s6bpx5i62iap70o/thor_ragnarok_logo.jpg?raw=1", "thor3")};
 
 <!-- MARVEL -->
 
 <!-- DC -->
 
 <!--The Lego Batman Movie-->
-document.getElementById("legobm").onmouseover = function() {change("pics/lego_batman_release.JPG", "legobm")};
-document.getElementById("legobm").onmouseout = function() {change("pics/lego_batman_logo.JPG", "legobm")};
+document.getElementById("legobm").onmouseover = function() {change("https://www.dropbox.com/s/73rbhcpff0g49pw/lego_batman_release.jpg?raw=1", "legobm")};
+document.getElementById("legobm").onmouseout = function() {change("https://www.dropbox.com/s/wu345xydp2lt2cy/lego_batman_logo.jpg?raw=1", "legobm")};
 <!--Wonder Woman-->
-document.getElementById("ww").onmouseover = function() {change("pics/wonder_woman_release.JPG", "ww")};
-document.getElementById("ww").onmouseout = function() {change("pics/wonder_woman_logo.JPG", "ww")};
+document.getElementById("ww").onmouseover = function() {change("https://www.dropbox.com/s/zhrm3oi7duozffs/wonder_woman_release.jpg?raw=1", "ww")};
+document.getElementById("ww").onmouseout = function() {change("https://www.dropbox.com/s/d7htxib0jis31jg/wonder_woman_logo.jpg?raw=1", "ww")};
 <!--Justice League-->
-document.getElementById("jl").onmouseover = function() {change("pics/justice_league_release.JPG", "jl")};
-document.getElementById("jl").onmouseout = function() {change("pics/justice_league_logo.JPG", "jl")};
+document.getElementById("jl").onmouseover = function() {change("https://www.dropbox.com/s/pqoqy5w6bpte137/justice_league_release.jpg?raw=1", "jl")};
+document.getElementById("jl").onmouseout = function() {change("https://www.dropbox.com/s/nw9k9z44covc5lx/justice_league_logo.jpg?raw=1", "jl")};
 
 <!-- DC -->
 
